@@ -1,0 +1,106 @@
+<!-- Page for users to register and login in order to use the Authoring Tool -->
+<!-- Written by Daniel Muller -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Login or Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global-styles.css" rel="stylesheet">
+    <link href="css/authentication.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./home.html">NavPal</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class=""><a href="./home.html">Home</a></li>
+              <li class="active"><a href="./account.html">Account</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Title and subtitile
+    ================================================== -->
+    <header class="jumbotron subhead" id="overview">
+      <div class="container">
+        <h1>Login or Sign up</h1>
+        <p class="note">By creating your account you agree to our 
+        <a href="/terms/" target="blank">Terms of Use</a> and <a href="/privacy/" target="blank">Privacy Policy</a>.</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row" id="formRow">
+        <div class="span12">
+          <div class="page-header"><h3>Please fill out your information to get started.</h3></div>
+        </div>
+        
+        <!-- Login Form
+        ================================================== -->
+        <div class="span4 offset2">   
+          <h3>Log in</h3>
+          <div id="loginForm" class="control-group">
+            <input id="loginEmail" type="text" placeholder="Email" maxlength="75">
+            <input id="loginPass" type="password" placeholder="Password">
+            <div id="loginInfo" class="help-block hidden"></div>
+          </div>
+            <button id="loginButton" class="btn btn-primary authentication-btn">Login</button>
+        </div>
+          
+        <!-- Registration Form
+        ================================================== -->
+        <div class="span4">   
+          <h3>Sign up with email</h3>
+          <div id="matchEmails" class="control-group">
+            <input id="registrationEmail" type="text" placeholder="Email" name="email" maxlength="75">
+            <input id="confirmEmail" type="text" placeholder="Confirm Email" name="email" maxlength="75">
+            <div id="registrationEmailInfo" class="help-block hidden"></div>
+          </div>
+          <div id="matchPasswords" class="control-group">
+            <input id="registrationPass" type="password" placeholder="Password">
+            <input id="confirmPass" type="password" placeholder="Confirm Password">
+            <div id="registrationPasswordInfo" class="help-block hidden"></div>
+          </div>
+          <div id="registrationButton" class="btn btn-primary authentication-btn">Create account</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js" type="text/javascript" ></script>
+    <script src="./js/bootstrap/bootstrap.min.js" type="text/javascript" ></script>
+    <script src="./js/lib/Util.js"></script>
+    <script src="./js/authentication.js" type="text/javascript" ></script>
+    <script src="./js/image/spin.min.js"></script>
+    <script src="./js/image/jquery.spin.js"></script>
+
+  </body>
+</html>
