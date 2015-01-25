@@ -31,7 +31,7 @@ def login():
             session['logged_in'] = True
             flash('You were logged in')
             return "You are in!"
-            return render_template('/../sign_in.html', error=error)
+    return render_template('sign_in.html', error=error)
 
 @app.route('/logout')
 def logout():
