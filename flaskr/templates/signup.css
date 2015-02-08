@@ -1,14 +1,20 @@
 body {
   padding-top: 100px;
   padding-bottom: 40px;
+  margin: 0 auto !important;
+  /*padding-left: 40px;
+  padding-right: 40px;*/
+
+
   background-color: #EDEDED;
 }
 
 
 #signup-box {
+  max-width:360px;
+  margin: 0 auto !important;
+  float: none !important;
   background-color: white;
-  padding-bottom:60px;
-  border-radius:10px;
 }
 
 .form-signup {
@@ -72,8 +78,8 @@ body {
 }
 
 .form-signup button {
-  width: 40%;
-  margin-left: 180px;
+  width: 30%;
+  margin-left: 210px;
   padding: 3px 0px;
   background-color:  #2965B9;
   opacity : 0.8;
