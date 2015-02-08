@@ -1,14 +1,24 @@
 body {
   padding-top: 100px;
   padding-bottom: 40px;
+  /*padding-left: 40px;
+  padding-right: 40px;*/
+
+
   background-color: #EDEDED;
+
 }
 
 
 #signup-box {
+  max-width:360px;
+  margin: 0 auto !important;
+  float: none !important;
   background-color: white;
-  padding-bottom:60px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   border-radius:10px;
+
 }
 
 .form-signup {

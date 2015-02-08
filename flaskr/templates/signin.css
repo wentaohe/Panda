@@ -6,8 +6,11 @@ body {
 
 
 #signin-box {
+  max-width:360px;
+  margin: 0 auto !important;
+  float: none !important;
   background-color: white;
-  padding-bottom:60px;
+  padding-bottom:30px;
   border-radius:10px;
 }
 
@@ -54,9 +57,10 @@ body {
 }
 
 .form-signin button {
-  width: 30%;
+  width: 22%;
   margin-top: -35px;
-  margin-left: 210px;
+  margin-left: 234px;
+
   padding: 3px 0px;
   background-color:  #2965B9;
   opacity : 0.8;
