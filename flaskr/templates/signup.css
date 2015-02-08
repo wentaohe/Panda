@@ -6,6 +6,9 @@ body {
 
 
 #signup-box {
+  max-width:360px;
+  margin: 0 auto !important;
+  float: none !important;
   background-color: white;
   padding-bottom:60px;
   border-radius:10px;
