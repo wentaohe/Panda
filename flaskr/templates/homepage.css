@@ -8,6 +8,10 @@ body {
   margin-bottom: 20px;
 }
 
+#body_container {
+  margin-left: 3%;
+  margin-right: 3%;
+}
 
 #left_column {
   margin-top: 70px;
