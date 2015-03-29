@@ -34,7 +34,7 @@
       <!-- Static navbar -->
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-          <ul class="nav navbar-nav" id="logo" data-toggle="collapse" data-target="#collapseExample">
+          <ul class="nav navbar-nav" id="logo" data-toggle="collapse" data-target="#createEvent">
               <li><a href="#"><img src="../images/whatshot.png" height="32" width="32"></a></li>
           </ul>
           <div class="navbar-header">
@@ -92,18 +92,29 @@
         </div>
 
         <div class="col-md-6" id="mid_column">
-          <!--
-          <form >
-            Input something: <input type = "text" name = "name">
-          </form>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Button 
-          </button>-->
-          <div class="collapse" id="collapseExample">
+
+          <div class="collapse" id="createEvent">
             <div class="well">
-              <p>Blah Blah Blah...</p>
-              <p>HAHAHA</p>
+            <form class = "form-event">
+              
+              <input name="event title" class="form-control" type="event title" placeholder="Event Title" required autofocus>
+              
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                  Category
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                </ul>
+              </div>  
+
+            </form>
             </div>
+
           </div>
 
           <div class="jumbotron">
