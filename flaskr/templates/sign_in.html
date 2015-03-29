@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='signin.css')}}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -42,7 +42,7 @@
           <label class="checkbox">
             <input type="checkbox" value="remember-me"> Remember me
           </label>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">GO in</button>
         </form>
       </div>
       <div class="col-sm-3"></div>
