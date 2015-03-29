@@ -96,21 +96,43 @@
           <div class="collapse" id="createEvent">
             <div class="well">
             <form class = "form-event">
-              
-              <input name="event title" class="form-control" type="event title" placeholder="Event Title" required autofocus>
-              
-              <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                  Category
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
-                </ul>
-              </div>  
+              <div class="row">
+                <div class="col-md-8">
+                  <input name="event title" class="form-control" type="event title" placeholder="Name Your Event !" required autofocus>
+                </div>
+                <div class="dropdown col-md-3">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    Category
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">E</a></li>
+                  </ul>
+                </div> 
+              </div> 
+
+              <div class="row">
+                <div class="col-md-8"> time </div>
+
+                <div class="dropdown col-md-3">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    2 people
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1 ~ 5 people</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">6 ~ 10 people</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">11 ~ 15 people</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">15 ~ 20 people</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">20+ people</a></li>
+                  </ul>
+                </div> 
+
+              </div>
 
             </form>
             </div>
