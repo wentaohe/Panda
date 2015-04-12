@@ -31,3 +31,14 @@ body {
 #right_column {
   margin-top: 70px;
 }*/
+.create_entry {
+  margin-bottom: 15px; 
+}
+
+#dropdown_people {
+  width: 100%;
+}
+
+#dropdown_category {
+  width: 100%;
+}

@@ -20,6 +20,19 @@
     <!-- Custom styles for this template -->
     <link href="homepage.css" rel="stylesheet">
 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
+    
+    <!-- <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script> -->
+    <script type="text/javascript" src="../bower_components/moment/min/moment.min.js"></script>
+    <!-- <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="../bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="../bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -80,7 +93,7 @@
         </div><!--/.container-fluid -->
       </nav>
 
-      
+    <!-- main frame -->
     <div class="container-fluid" id="body_container">
       <div class ="row" id="left_column" >
         <div class="col-md-3 hidden-xs hidden-sm">
@@ -96,12 +109,13 @@
           <div class="collapse" id="createEvent">
             <div class="well">
             <form class = "form-event">
+              
               <div class="row">
-                <div class="col-md-8">
-                  <input name="event title" class="form-control" type="event title" placeholder="Name Your Event !" required autofocus>
+                <div class="col-sm-8 create_entry">
+                  <input name="event title" class="form-control" type="event title" placeholder="Name Your Event" required autofocus>
                 </div>
-                <div class="dropdown col-md-3">
-                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                <div class="dropdown col-sm-4 create_entry">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdown_category" data-toggle="dropdown" aria-expanded="true">
                     Category
                     <span class="caret"></span>
                   </button>
@@ -115,11 +129,30 @@
                 </div> 
               </div> 
 
-              <div class="row">
-                <div class="col-md-8"> time </div>
-
-                <div class="dropdown col-md-3">
-                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+              <div class = "row">
+                <div class="col-sm-8 create_entry">
+                  <div class="form-group" style = "margin-bottom: 0px;">
+                    <div class='input-group date' id='datetimepicker'>
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar">
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        $('#datetimepicker').datetimepicker({
+                            defaultDate: new Date(),
+                            minDate: new Date()
+                            //daysOfWeekDisabled: [0, 6]
+                        });
+                    });
+                </script>
+            
+                <div class="dropdown col-sm-4 create_entry">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdown_people" data-toggle="dropdown" aria-expanded="true">
                     2 people
                     <span class="caret"></span>
                   </button>
@@ -134,6 +167,7 @@
 
               </div>
 
+             
             </form>
             </div>
 
@@ -213,12 +247,9 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
   </body>
 </html>
